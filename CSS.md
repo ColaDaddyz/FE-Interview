@@ -65,5 +65,25 @@ https://swordair.com/css-display-run-in/
 * 你有兼容 retina 屏幕的经历吗？如果有，在什么地方使用了何种技术？
 * 请问为何要使用 `translate()` 而非 *absolute positioning*，或反之的理由？为什么？
 
+* Viewport 视口相关 rem 看看
 
+* Flex
+Justify-content 主轴
+Align-items 
+
+Flex-grow 放大比例 如果为0 放大
+Flex-shink 缩小比例
+Flex-basis flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小
+
+Flex
+	flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
+	该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。
+	当 flex 取值为一个非负数字，则该数字为 flex-grow 值，flex-shrink 取 1，flex-basis 取 0%，如下是等同的
+	当 flex 取值为一个长度或百分比，则视为 flex-basis 值，flex-grow 取 1，flex-shrink 取 1，有如下等同情况（注意 0% 是一个百分比而不是一个非负数字）：
+	 flex 取值为两个非负数字，则分别视为 flex-grow 和 flex-shrink 的值，flex-basis 取 0%，如下是等同的：
+	当 flex 取值为一个非负数字和一个长度或百分比，则分别视为 flex-grow 和 flex-basis 的值，flex-shrink 取 1，如下是等同的：
+
+	• auto：首先检索该子元素的主尺寸，如果主尺寸不为 auto，则使用值采取主尺寸之值；如果也是 auto，则使用值为 content。
+	• content：指根据该子元素的内容自动布局。有的用户代理没有实现取 content 值，等效的替代方案是 flex-basis 和主尺寸都取 auto。
+百分比：根据其包含块（即伸缩父容器）的主尺寸计算。如果包含块的主尺寸未定义（即父容器的主尺寸取决于子元素），则计算结果和设为 auto 一样。
 
