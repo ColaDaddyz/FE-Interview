@@ -1,4 +1,10 @@
 # CSS 面试题
+* 替换和非替换元素的区别
+1. 块级替换元素的宽度如果设置为auto，宽度是替换元素的宽度，比如讲img设置为block
+2. 行内替换元素会有高度和宽度，如果在文本行内，会用替换元素的高度来定义行内框的高度，但是不会改变line-height
+
+
+
 页面导入样式时，使用link和@import有什么区别？
 
 （1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;
@@ -12,21 +18,23 @@
 
 * 请问 "resetting" 和 "normalizing" CSS 之间的区别？你会如何选择，为什么？
 http://jerryzou.com/posts/aboutNormalizeCss/
+
 * 请解释浮动 (Floats) 及其工作原理。
+	如果对一个元素设置浮动，它就会脱离文本流直到碰到框的最左或者最右，普通流的其他元素会取代它原本的位置
 * 描述`z-index`和叠加上下文是如何形成的。
+	z-index属性设置元素的堆叠顺序，数值越大的越靠前。
 * 请描述 BFC(Block Formatting Context) 及其如何工作。
+> https://segmentfault.com/a/1190000004246731
+  http://www.cnblogs.com/lhb25/p/inside-block-formatting-ontext.html
+
 * 列举不同的清除浮动的技巧，并指出它们各自适用的使用场景。
+
 * 请解释 CSS sprites，以及你要如何在页面或网站中实现它。
 雪碧图，多个图片放在一起，用background-position
-
-* 你最喜欢的图片替换方法是什么，你如何选择使用。
 
 * 你会如何解决特定浏览器的样式问题？
 autoprefixer
 
-* 如何为有功能限制的浏览器提供网页？
-  * 你会使用哪些技术和处理方法？
-  
 * 有哪些的隐藏内容的方法 (如果同时还要保证屏幕阅读器可用呢)？
 visibility:hidden
 
@@ -59,11 +67,15 @@ https://swordair.com/css-display-run-in/
 
 * 请解释 relative、fixed、absolute 和 static 元素的区别
 
-* CSS 中字母 'C' 的意思是叠层 (Cascading)。请问在确定样式的过程中优先级是如何决定的 (请举例)？如何有效使用此系统？
 
 * 为什么响应式设计 (responsive design) 和自适应设计 (adaptive design) 不同？
+	> 响应式更多的是指用媒体查询和流布局实现各个屏幕上的布局不同，自适应主要是为了
+
 * 你有兼容 retina 屏幕的经历吗？如果有，在什么地方使用了何种技术？
+	flexible
+
 * 请问为何要使用 `translate()` 而非 *absolute positioning*，或反之的理由？为什么？
+	tanslate gpu加速，直接composite 避免了paint
 
 * Viewport 视口相关 rem 看看
 
@@ -86,4 +98,6 @@ Flex
 	• auto：首先检索该子元素的主尺寸，如果主尺寸不为 auto，则使用值采取主尺寸之值；如果也是 auto，则使用值为 content。
 	• content：指根据该子元素的内容自动布局。有的用户代理没有实现取 content 值，等效的替代方案是 flex-basis 和主尺寸都取 auto。
 百分比：根据其包含块（即伸缩父容器）的主尺寸计算。如果包含块的主尺寸未定义（即父容器的主尺寸取决于子元素），则计算结果和设为 auto 一样。
+
+* css3 特性
 

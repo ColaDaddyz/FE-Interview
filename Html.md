@@ -11,11 +11,13 @@ XHTML 元素必须被关闭。
 标签名必须用小写字母。
 XHTML 文档必须拥有根元素。
 
-* 如果网页内容需要支持多语言，你会怎么做？
 * 使用 `data-` 属性的好处是什么？
 	可以存放数据，用于选择器
+	
 * 如果把 HTML5 看作做一个开放平台，那它的构建模块有哪些？
+
 * 请描述 `cookies`、`sessionStorage` 和 `localStorage` 的区别。
+
 * 请解释 `<script>`、`<script async>` 和 `<script defer>` 的区别。
 https://sfault-image.b0.upaiyun.com/28/4a/284aec5bb7f16b3ef4e7482110c5ddbb_articlex
 
