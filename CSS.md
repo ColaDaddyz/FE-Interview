@@ -101,3 +101,8 @@ Flex
 
 * css3 特性
 
+* 动画性能优化
+
+https://developers.google.com/web/fundamentals/performance/rendering/?hl=zh-cn
+
+
