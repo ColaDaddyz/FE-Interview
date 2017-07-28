@@ -58,6 +58,9 @@ https://www.zhihu.com/question/20185756
 * 请解释你对盒模型的理解，以及如何在 CSS 中告诉浏览器使用不同的盒模型来渲染你的布局。
 box-sizing
 
+* IFC
+http://www.cnblogs.com/fsjohnhuang/p/5259121.html
+
 * 请罗列出你所知道的 display 属性的全部值
 block,inline,inline-block,run-in
 https://swordair.com/css-display-run-in/

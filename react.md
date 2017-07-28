@@ -44,3 +44,16 @@ setState 通过一个队列机制实现 state 更新
 
 ## patch
 
+## 为什么更推崇高阶组件
+声明式优于命令式
+
+## 性能优化
+1. 兜底值，样式尽量使用常量，不要直接使用字面量，避免每次都会重新渲染
+2. 利用key
+3. shouldComponentUpdate
+4. 注意函数绑定
+5. PureComponent
+6. ?react_perf 做组件性能分析
+7. why-did-you-update
+
+
