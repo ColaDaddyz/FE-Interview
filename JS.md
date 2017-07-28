@@ -93,6 +93,8 @@
 		• CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用。
 		• CommonJS 模块是运行时加载，ES6 模块是编译时输出接口。
 		• 循环加载处理不同
+- ES6
+	let，const，模板字符串，解构复制，rest，spread，箭头函数，class
 
-Mvvm mvc 单向数据流
+- Mvvm mvc 单向数据流
 
